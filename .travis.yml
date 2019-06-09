@@ -1,0 +1,9 @@
+sudi: required
+services:
+  - docker
+
+before_install:
+  - docker build -t bhanu/docker-react -f Dockerfile.dev .
+
+script:
+  - docker run bhanu/docker-react npm run test -- --coverage
