@@ -1,4 +1,4 @@
-sudi: required
+sudo: required
 services:
   - docker
 
